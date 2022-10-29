@@ -1,7 +1,12 @@
-.createAccount{
-    font-family: Satoshi Variable;
-    font-size: 1.9rem;
-    font-weight: 500;
-    line-height: 2.56rem;
-    letter-spacing: 0em;
+.createAccount {
+  font-family: Satoshi Variable;
+  font-size: 1.9rem;
+  font-weight: 500;
+  line-height: 2.56rem;
+  letter-spacing: 0em;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  padding: 4rem 4rem;
+  overflow: hidden;
 }

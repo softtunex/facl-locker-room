@@ -1,22 +1,35 @@
-import React from 'react'
-import "./AccountList.css"
+import React from "react";
+import "./AccountList.css";
+import { Table } from "react-bootstrap/Table";
+import "bootstrap/dist/css/bootstrap.min.css";
 
-const AccountList = ({accountLists}) => {
+const AccountList = ({ accountLists}) => {
   return (
-    <div className='accountList'>
-        <p>List of Account</p>
-        <table>
-          <tr>
-            <th>Full Name</th>
-            <th>Gender</th>
-            <th>Email Address</th>
-            <th>Mobile Number</th>
-            <th>Nationality</th>
-          </tr>
-          {accountLists}
-        </table>
+    <div className="accountList">
+      <div className="table-content">
+        <div>
+          <p>List of Account</p>
+        </div>
+        <div className="accountListTable">
+          <table className="table">
+            <thead>
+              <tr>
+                <th>Full Name</th>
+                <th>Gender</th>
+                <th>Email Address</th>
+                <th>Mobile Number</th>
+                <th>Nationality</th>
+              </tr>
+            </thead>
+            <tbody className='bg-light'>
+            {accountLists}
+              
+            </tbody>
+          </table>
+        </div>
+      </div>
     </div>
-  )
-}
+  );
+};
 
-export default AccountList
+export default AccountList;

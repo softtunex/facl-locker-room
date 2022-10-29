@@ -2,7 +2,10 @@
     background-color: #987899;
     color: #fff;
     height: 100vh;
-    
+    display: flex;
+    flex-direction: column;
+    padding: 4rem 4rem;
+    overflow: hidden;
 
 }
 .accountList p{
@@ -12,4 +15,16 @@
     font-weight: 500;
     line-height: 2.56rem;
     letter-spacing: 0;
+}
+.accountListTable{
+    overflow-x: scroll;
+
+
+} 
+.accountListTable table{
+    width: 100%;
+    font-weight: 500;
+}
+.accountListTable table thead{
+    background-color: rgba(232, 232, 232, 1);
 }
