@@ -1,23 +1,31 @@
-import logo from './logo.svg';
+
+import { useEffect, useState } from 'react';
 import './App.css';
+import LockerRoom from './Page/LockerRoom.jsx';
 
 function App() {
+  const [tableData, setTableData] = useState([])
+
+  useEffect(()=>{
+    fetch("https://raw.githubusercontent.com/OtegaOvie/StaticDataset/main/accounts.json")
+      .then(res=>res.json())
+      .then(data=>setTableData(data))
+  },[])
+
+  const accountLists = tableData.map((data,i)=>{
+    return(
+      <tr key={i}>
+              <td>{data.firstName} {data.lastName}</td>
+              <td>{data.gender==="M"?"Male":"Female"}</td>
+              <td>{data.emailAddress}</td>
+              <td>{data.mobileNumber}</td>
+              <td>{data.nationality}</td>
+            </tr>
+    )
+  })
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <LockerRoom accountLists={accountLists}/>
     </div>
   );
 }

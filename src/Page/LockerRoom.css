@@ -1,0 +1,4 @@
+.lockerRoom{
+    display: grid;
+    grid-template-columns: 60% auto;
+}

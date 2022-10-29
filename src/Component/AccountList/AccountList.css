@@ -1,0 +1,15 @@
+.accountList{
+    background-color: #987899;
+    color: #fff;
+    height: 100vh;
+    
+
+}
+.accountList p{
+    line-height: 2rem;
+    font-family: Satoshi Variable;
+    font-size: 1.9rem;
+    font-weight: 500;
+    line-height: 2.56rem;
+    letter-spacing: 0;
+}
