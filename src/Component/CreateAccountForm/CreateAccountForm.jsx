@@ -26,7 +26,8 @@ const CreateAccountForm = ({
       !inputValue.gender ||
       !inputValue.emailAddress ||
       !inputValue.mobileNumber ||
-      !inputValue.nationality
+      !inputValue.nationality||
+      inputValue.nationality==="Nationality"
     ) {
       alert("Ensure all input are field");
       return
