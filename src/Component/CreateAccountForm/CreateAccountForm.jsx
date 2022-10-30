@@ -29,7 +29,7 @@ const CreateAccountForm = ({
       !inputValue.nationality||
       inputValue.nationality==="Nationality"
     ) {
-      alert("Ensure all input are filled");
+      alert("Ensure all inputs are filled");
       return
     }
     //Add New data to the Account List Table
