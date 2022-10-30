@@ -2,15 +2,15 @@ import React from "react";
 import "./AccountList.css";
 import { Table } from "react-bootstrap/Table";
 import "bootstrap/dist/css/bootstrap.min.css";
-
-const AccountList = ({ accountLists}) => {
+//Account List
+const AccountList = ({ accountLists }) => {
   return (
     <div className="accountList">
       <div className="table-content">
         <div>
           <p>List of Account</p>
         </div>
-        <div className="accountListTable">
+        <div className="accountListTable"> 
           <table className="table">
             <thead>
               <tr>
@@ -21,10 +21,8 @@ const AccountList = ({ accountLists}) => {
                 <th>Nationality</th>
               </tr>
             </thead>
-            <tbody className='bg-light'>
-            {accountLists}
-              
-            </tbody>
+            {/* Display the data on the table */}
+            <tbody className="bg-light">{accountLists}</tbody> 
           </table>
         </div>
       </div>

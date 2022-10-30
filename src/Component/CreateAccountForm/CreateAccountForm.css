@@ -12,20 +12,20 @@
   border: 0.1rem solid rgba(0, 0, 0, 0.15);
   color: rgba(0, 0, 0, 0.618);
 }
-.input .gender{
-    display: flex;
-    gap: 1rem;
-    font-size: 1.25rem;
-    margin: 2rem 0;
+.input .gender {
+  display: flex;
+  gap: 1rem;
+  font-size: 1.25rem;
+  margin: 2rem 0;
 }
-.genderInfo{
-    display: flex;
-    gap: 1rem;
+.genderInfo {
+  display: flex;
+  gap: 1rem;
 }
-.genderInfo input[type=radio] {
-    border: 0px;
-    width: 2rem;
-    height: 2rem;
+.genderInfo input[type="radio"] {
+  border: 0px;
+  width: 2rem;
+  height: 2rem;
 }
 .form button {
   display: flex;
@@ -36,4 +36,11 @@
   background: transparent;
   width: 20.3rem;
   border-radius: 4rem;
+}
+
+@media screen and (max-width: 720px) {
+  .input .inputItem,
+  .form button {
+    width: 100%;
+  }
 }

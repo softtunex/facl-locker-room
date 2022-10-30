@@ -1,13 +1,14 @@
 import React from "react";
-import "./CreateAccountForm.css"
+import "./CreateAccountForm.css";
 
+    //form to receive these inputs
 const CreateAccountForm = ({
   setInputValue,
   inputValue,
   tableData,
   setTableData,
 }) => {
-  function handleChange(e) {
+  function handleChange(e) { //handles inputs change event
     const { name, value } = e.target;
     setInputValue((prevInput) => {
       return {
@@ -62,7 +63,7 @@ const CreateAccountForm = ({
             onChange={handleChange}
             name="firstName"
             value={inputValue.firstName}
-          />
+          /> 
           <input
             className="col-12 form-control inputItem"
             type="text"
@@ -70,44 +71,54 @@ const CreateAccountForm = ({
             onChange={handleChange}
             name="lastName"
             value={inputValue.lastName}
-          />
+          /> 
           <div className="gender">
-          <div className="genderInfo">
-            <input type="radio" name="gender" value="M" onChange={handleChange} />
-          Male
+            <div className="genderInfo">
+              <input
+                type="radio"
+                name="gender"
+                value="M"
+                onChange={handleChange}
+              />
+              Male
             </div>
             <div className="genderInfo">
-          <input type="radio" name="gender" value="F" onChange={handleChange} />
-          Female
+              <input
+                type="radio"
+                name="gender"
+                value="F"
+                onChange={handleChange}
+              />
+              Female
             </div>
           </div>
-        <input
-          className="col-12 form-control inputItem"
-          type="email"
-          placeholder="Email Address"
-          onChange={handleChange}
-          name="emailAddress"
-          value={inputValue.emailAddress}
-        />
-        <input
-          className="col-12 form-control inputItem"
-          type="tel"
-          placeholder="Mobile Number"
-          onChange={handleChange}
-          name="mobileNumber"
-          value={inputValue.mobileNumber}
-        />
-        <select
-          className="col-12 inputItem"
-          name="nationality"
-          value={inputValue.nationality}
-          onChange={handleChange}
-        >
-          <option>Nationality</option>
-          <option>Nigerian</option>
-          <option>Ghanian</option>
-          <option>British</option>
-        </select>
+          <input
+            className="col-12 form-control inputItem"
+            type="email"
+            placeholder="Email Address"
+            onChange={handleChange}
+            name="emailAddress"
+            value={inputValue.emailAddress}
+          />
+          <input
+            className="col-12 form-control inputItem"
+            type="tel"
+            placeholder="Mobile Number"
+            onChange={handleChange}
+            name="mobileNumber"
+            value={inputValue.mobileNumber}
+          />
+          <select
+            className="col-12 inputItem"
+            name="nationality"
+            value={inputValue.nationality}
+            onChange={handleChange}
+          >
+            <option>Nationality</option>
+            <option>Nigerian</option>
+            <option>Ghanian</option>
+            <option>British</option>
+          </select>
         </div>
         <button type="submit" onClick={handleClick}>
           Submit

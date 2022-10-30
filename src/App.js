@@ -19,9 +19,10 @@ function App() {
     )
       .then((res) => res.json())
       .then((data) => setTableData(data))
-      .catch(err=>alert("An error occured, Check your internet connection"))
-  }, []);
- 
+      .catch((err) =>
+        alert("An error occured, Check your internet connection")
+      );
+  }, []);//consume API on pageload
 
   const accountLists = tableData.map((data, i) => {
     return (
@@ -54,11 +55,11 @@ function App() {
   //         name="lastName"
   //         value={inputValue.lastName}
   //       />
-  //       <input 
-  //         type="radio" 
-  //         name="gender" 
-  //         value="M" 
-  //         onChange={handleChange} 
+  //       <input
+  //         type="radio"
+  //         name="gender"
+  //         value="M"
+  //         onChange={handleChange}
   //       />Male
   //       <input
   //         type="radio"

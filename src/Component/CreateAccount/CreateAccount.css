@@ -1,5 +1,4 @@
 .createAccount {
-  
   line-height: 2.56rem;
   letter-spacing: 0em;
   height: 100vh;
@@ -8,11 +7,23 @@
   padding: 4rem 4rem;
   overflow: hidden;
 }
-.createAccount p{
-    line-height: 2rem;
-    font-family: Satoshi Variable;
-    font-size: 1.9rem;
-    font-weight: 500;
-    line-height: 2.56rem;
-    letter-spacing: 0;
+.createAccount p {
+  line-height: 2rem;
+  font-family: Satoshi Variable;
+  font-size: 1.9rem;
+  font-weight: 500;
+  line-height: 2.56rem;
+  letter-spacing: 0;
+}
+@media screen and (max-width: 1024px) {
+  .createAccount {
+    align-items: center;
+    overflow-y: scroll;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+  }
+  .createAccount::-webkit-scrollbar {
+    /* WebKit */
+    width: 0;
+  }
 }

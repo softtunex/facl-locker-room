@@ -1,28 +1,34 @@
-.accountList{
-    background-color: #987899;
-    color: #fff;
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    padding: 4rem 4rem;
-    overflow: hidden;
+.accountList {
+  background-color: #987899;
+  color: #fff;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  padding: 4rem 4rem;
+  overflow: hidden;
+}
+.accountList p {
+  line-height: 2rem;
+  font-family: Satoshi Variable;
+  font-size: 1.9rem;
+  font-weight: 500;
+  line-height: 2.56rem;
+  letter-spacing: 0;
+}
 
+.accountListTable table {
+  width: 100%;
+  font-weight: 500;
 }
-.accountList p{
-    line-height: 2rem;
-    font-family: Satoshi Variable;
-    font-size: 1.9rem;
-    font-weight: 500;
-    line-height: 2.56rem;
-    letter-spacing: 0;
+.accountListTable table thead {
+  background-color: rgba(232, 232, 232, 1);
 }
-/* .accountListTable{
+
+@media screen and (max-width: 720px) {
+  .accountList {
+    padding: 1rem;
+  }
+  .accountListTable {
     overflow-x: scroll;
-}  */
-.accountListTable table{
-    width: 100%;
-    font-weight: 500;
-}
-.accountListTable table thead{
-    background-color: rgba(232, 232, 232, 1);
+  }
 }

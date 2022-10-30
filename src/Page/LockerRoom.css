@@ -1,4 +1,11 @@
-.lockerRoom{
-    display: grid;
-    grid-template-columns: 60% auto;
+.lockerRoom {
+  display: grid;
+  grid-template-columns: 60% auto;
+}
+@media screen and (max-width: 1024px) {
+  .lockerRoom {
+    display: flex;
+    flex-direction: column-reverse;
+    overflow-x: hidden;
+  }
 }
