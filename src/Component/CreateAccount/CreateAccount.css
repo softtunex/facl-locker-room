@@ -5,8 +5,9 @@
   display: flex;
   flex-direction: column;
   padding: 4rem 4rem;
-  overflow: hidden;
+  overflow: scroll;
 }
+
 .createAccount p {
   line-height: 2rem;
   font-family: Satoshi Variable;
@@ -18,7 +19,6 @@
 @media screen and (max-width: 1024px) {
   .createAccount {
     align-items: center;
-    overflow-y: scroll;
     scrollbar-width: none;
     -ms-overflow-style: none;
   }

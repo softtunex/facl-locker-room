@@ -5,5 +5,5 @@
 }
 .App {
   width: 98vw;
-  overflow-x: hidden;
+  overflow: hidden;
 }
