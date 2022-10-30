@@ -21,41 +21,7 @@ function App() {
       .then((data) => setTableData(data))
       .catch(err=>alert("An error occured, Check your internet connection"))
   }, []);
-
-  // function handleChange(e) {
-  //   const { name, value } = e.target;
-  //   setInputValue((prevInput) => {
-  //     return {
-  //       ...prevInput,
-  //       [name]: value,
-  //     };
-  //   });
-  // }
-
-  // const handleClick = () => {
-  //   if (!inputValue.firstName || !inputValue.lastName) {
-  //     return;
-  //   }
-  //   setTableData([
-  //     ...tableData,
-  //     {
-  //       firstName: inputValue.firstName,
-  //       lastName: inputValue.lastName,
-  //       gender: inputValue.gender,
-  //       emailAddress: inputValue.emailAddress,
-  //       mobileNumber: inputValue.mobileNumber,
-  //       nationality: inputValue.nationality,
-  //     },
-  //   ]);
-  //   setInputValue({
-  //     firstName: "",
-  //     lastName: "",
-  //     gender: inputValue.gender,
-  //     emailAddress: "",
-  //     mobileNumber: "",
-  //     nationality: "",
-  //   });
-  // };
+ 
 
   const accountLists = tableData.map((data, i) => {
     return (
@@ -70,7 +36,6 @@ function App() {
       </tr>
     );
   });
-  // const createAccountForm = (
   //   <div className="form">
   //     <div className="input">
   //       <input

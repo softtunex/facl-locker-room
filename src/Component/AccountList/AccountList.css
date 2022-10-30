@@ -16,11 +16,9 @@
     line-height: 2.56rem;
     letter-spacing: 0;
 }
-.accountListTable{
+/* .accountListTable{
     overflow-x: scroll;
-
-
-} 
+}  */
 .accountListTable table{
     width: 100%;
     font-weight: 500;

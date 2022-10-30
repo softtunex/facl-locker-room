@@ -71,10 +71,16 @@ const CreateAccountForm = ({
             name="lastName"
             value={inputValue.lastName}
           />
-          <input type="radio" name="gender" value="M" onChange={handleChange} />
+          <div className="gender">
+          <div className="genderInfo">
+            <input type="radio" name="gender" value="M" onChange={handleChange} />
           Male
+            </div>
+            <div className="genderInfo">
           <input type="radio" name="gender" value="F" onChange={handleChange} />
           Female
+            </div>
+          </div>
         <input
           className="col-12 form-control inputItem"
           type="email"
@@ -92,7 +98,7 @@ const CreateAccountForm = ({
           value={inputValue.mobileNumber}
         />
         <select
-          className="col-12 form-control inputItem"
+          className="col-12 inputItem"
           name="nationality"
           value={inputValue.nationality}
           onChange={handleChange}
@@ -104,7 +110,7 @@ const CreateAccountForm = ({
         </select>
         </div>
         <button type="submit" onClick={handleClick}>
-          Save
+          Submit
         </button>
       </div>
     </div>

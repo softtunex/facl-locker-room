@@ -1,22 +1,39 @@
-.accountForm .form,.input{
-    margin: 1rem 0;
+.accountForm .form,
+.input {
+  margin: 1rem 0;
 }
-.input .inputItem{
-    margin: 1rem 0;
-    background-color: #F3F3F3;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.15);
-    height: 4rem;
-    width: 26.3rem;
-    border-radius: 0.4rem;
-
+.input .inputItem {
+  margin: 1rem 0;
+  background-color: #f3f3f3;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.15);
+  height: 4rem;
+  width: 26.3rem;
+  border-radius: 0.4rem;
+  border: 0.1rem solid rgba(0, 0, 0, 0.15);
+  color: rgba(0, 0, 0, 0.618);
 }
-.form button{
-display: flex;
-align-items: center;
-justify-content: center;
-color: #63625E;
-border: 0.1rem solid black;
-background: transparent;
-width: 20.3rem;
-border-radius: 4rem;
+.input .gender{
+    display: flex;
+    gap: 1rem;
+    font-size: 1.25rem;
+    margin: 2rem 0;
+}
+.genderInfo{
+    display: flex;
+    gap: 1rem;
+}
+.genderInfo input[type=radio] {
+    border: 0px;
+    width: 2rem;
+    height: 2rem;
+}
+.form button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #63625e;
+  border: 0.1rem solid black;
+  background: transparent;
+  width: 20.3rem;
+  border-radius: 4rem;
 }
